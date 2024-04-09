@@ -1,15 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(91, 221, 199);
+    background-color: rgb(255, 255, 255);
 }
 
 header{
-    background-color: rgb(0, 0, 0);
-    color: aquamarine;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(43, 43, 43); /* El color de fondo del header */
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    padding: 15px; /* Añade algo de relleno */
+    display: flex; /* Esto establece un contenedor flex */
+    justify-content: space-between; /* Esto alinea los hijos al inicio y al final */
+    align-items: center; /* Esto centra los hijos verticalmente */
+    
+    position: relative;
+}
+
+
+header::before {
+    content: ''; /* Los pseudo-elementos requieren la propiedad 'content' */
+    position: absolute;
+    top: 0; /* Posición al principio del header */
+    left: 0;
+    right: 0;
+    height: 4px; /* Altura de la línea azul */
+    background-color: #0000a0; /* Cambia este color al que necesites */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Crea un contenedor flex para los elementos de la lista */
+    padding: 0; /* Restablece el padding */
+    margin: 0; /* Restablece el margen */
+}
+
+nav li {
+    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Establece el color del texto de los enlaces a blanco */
 }
 
 .logo{
@@ -20,3 +55,58 @@ header{
     width: 200px;
     height: auto;
 }
+
+
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    padding: 0 10px; /* Ajusta este valor según sea necesario */
+    margin-left: 1px; /* Ajusta este valor según sea necesario */
+    margin-top: 40px; /* Espacio encima del h2 */
+    color: #1900ff; /* Color azul para los títulos de equipos participantes */
+}
+
+.teams table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.teams th, .teams td {
+    border: 1px solid #d6cbcb;
+    padding: 10px;
+    text-align: left;
+}
+
+.teams th {
+    background-color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
+}
+
+.teams td img {
+    width: 50px; /* Ajustar según el tamaño de la bandera */
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+}
+
+table th {
+    background-color: #000000; /* Color de fondo para los encabezados */
+    color: #ffffff; /* Color del texto para los encabezados */
+}
+
+/* Colorea cada fila impar de blanco */
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* Color blanco para filas impares */
+}
+
+/* Colorea cada fila par de gris */
+table tr:nth-child(even) {
+    background-color: #dddcdc; /* Color gris claro para filas pares, ajusta al tono de gris que prefieras */
+}
+
