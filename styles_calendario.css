@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: rgb(43, 43, 43); /* El color de fondo del header */
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    padding: 15px; /* Añade algo de relleno */
+    display: flex; /* Esto establece un contenedor flex */
+    justify-content: space-between; /* Esto alinea los hijos al inicio y al final */
+    align-items: center; /* Esto centra los hijos verticalmente */
+    
+    position: relative;
+}
+
+
+header::before {
+    content: ''; /* Los pseudo-elementos requieren la propiedad 'content' */
+    position: absolute;
+    top: 0; /* Posición al principio del header */
+    left: 0;
+    right: 0;
+    height: 4px; /* Altura de la línea azul */
+    background-color: #0000a0; /* Cambia este color al que necesites */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Crea un contenedor flex para los elementos de la lista */
+    padding: 0; /* Restablece el padding */
+    margin: 0; /* Restablece el margen */
+}
+
+nav li {
+    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Establece el color del texto de los enlaces a blanco */
+}
+
+.logo{
+    order: -1;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.fase-grupos, .fase-eliminacion-directa {
+    background-color: #ffffff; /* Fondo blanco, cambia según tus preferencias */
+    color: rgb(255, 0, 0); /* Texto en rojo para más contraste */
+    margin-bottom: 10px; /* Espacio entre secciones */
+    padding: 10px; /* Relleno dentro de las secciones */
+    margin: 20px 0; /* Agrega margen arriba y abajo de cada sección */
+}
+
+table {
+    width: 100%;
+    /* Más estilos para tus tablas... */
+}
+
+h2 {
+    color: #1900ff; /* Color azul para los títulos de las fases */
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #555; /* Línea de separación más clara */
+    margin: 20px 0; /* Espacio antes y después de la línea */
+}
+
+
+h3 {
+    margin-top: 20px; /* Espacio encima del h2 */
+    font-size: 18px; /* O el tamaño que prefieras */
+}
+h4 {
+    margin-top: 20px; /* Espacio encima del h2 */
+    font-size: 18px; /* O el tamaño que prefieras */
+}
+h5 {
+    margin-top: 20px; /* Espacio encima del h2 */
+    font-size: 18px; /* O el tamaño que prefieras */
+}
+h6 {
+    margin-top: 20px; /* Espacio encima del h2 */
+    font-size: 18px; /* O el tamaño que prefieras */
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Las celdas de la tabla se tocan entre sí */
+    margin-top: 10px; /* Espacio encima de la tabla */
+}
+table, th, td {
+    border: 1px solid #000000; /* Borde blanco para las celdas de la tabla */
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px; /* Relleno dentro de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+th {
+    background-color: #888888; /* Fondo oscuro para los encabezados de la tabla */
+}
+td:nth-of-type(2), /* PJ */
+td:nth-of-type(3), /* G */
+td:nth-of-type(4), /* E */
+td:nth-of-type(5), /* P */
+td:nth-of-type(6), /* GF */
+td:nth-of-type(7), /* GC */
+td:nth-of-type(8), /* DG */
+td:nth-of-type(9) { /* Pts */
+    text-align: center;
+}
+/* Asignar anchuras específicas a las columnas por clase o estilo en línea */
+th:nth-of-type(1), td:nth-of-type(1) { width: 50%; } /* País */
+th:nth-of-type(2), td:nth-of-type(2) { width: 5%; }  /* PJ */
+th:nth-of-type(3), td:nth-of-type(3) { width: 5%; }  /* G */
+th:nth-of-type(4), td:nth-of-type(4) { width: 5%; }  /* E */
+th:nth-of-type(5), td:nth-of-type(5) { width: 5%; }  /* P */
+th:nth-of-type(6), td:nth-of-type(6) { width: 5%; }  /* GF */
+th:nth-of-type(7), td:nth-of-type(7) { width: 5%; }  /* GC */
+th:nth-of-type(8), td:nth-of-type(8) { width: 5%; }  /* DG */
+th:nth-of-type(9), td:nth-of-type(9) { width: 5%; }  /* Pts */
+/* Continuar asignando anchuras a cada columna según se necesite */
+img {
+    height: 10px; /* Altura de las banderas */
+    width: auto; /* La anchura es automática para mantener la proporción */
+    margin-right: 10px; /* Espacio a la derecha de la bandera */
+}
