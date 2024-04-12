@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgb(43, 43, 43); /* El color de fondo del header */
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    padding: 15px; /* Añade algo de relleno */
+    display: flex; /* Esto establece un contenedor flex */
+    justify-content: space-between; /* Esto alinea los hijos al inicio y al final */
+    align-items: center; /* Esto centra los hijos verticalmente */
+    
+    position: relative;
+}
+header::before {
+    content: ''; /* Los pseudo-elementos requieren la propiedad 'content' */
+    position: absolute;
+    top: 0; /* Posición al principio del header */
+    left: 0;
+    right: 0;
+    height: 4px; /* Altura de la línea azul */
+    background-color: #0000a0; /* Cambia este color al que necesites */
+}
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Crea un contenedor flex para los elementos de la lista */
+    padding: 0; /* Restablece el padding */
+    margin: 0; /* Restablece el margen */
+}
+nav li {
+    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+}
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Establece el color del texto de los enlaces a blanco */
+}
+.logo{
+    order: -1;
+}
+.logo img{
+    width: 200px;
+    height: auto;
+}
+main {
+    padding: 20px;
+}
+
+
+
+.estadios h2 {
+    color: #2235e2; /* Sustituye este código de color por el que prefieras */
+    margin: 20px 0; /* Esto añade un espacio arriba y abajo del título del grupo */
+    font-weight: bold; /* Opcional, si quieres que los títulos sean más gruesos */
+}
+/* Estilo base para las secciones */
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; /* Esto proporciona un poco de espacio en los bordes */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+/* Ajustes para pantallas más grandes */
+@media (min-width: 992px) {
+    section {
+        max-width: 970px; /* Establece un ancho máximo para evitar que las secciones se expandan demasiado */
+    }
+}
+/* Ajustes para pantallas medianas */
+@media (max-width: 991px) {
+    section {
+        max-width: 720px; /* Ajusta este valor según sea necesario */
+    }
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    section {
+        max-width: 100%; /* Las secciones ocupan el ancho completo en dispositivos móviles */
+        padding: 0 10px; /* Reducir el padding en dispositivos móviles */
+    }
+}
+.estadios table {
+    margin-left: 0; /* Alinea la tabla a la izquierda */
+    margin-right: 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto; /* Centra la tabla */
+    margin-bottom: 10px; 
+}
+/* Si quieres que todas las imágenes en las celdas de la tabla tengan el mismo estilo */
+table td img {
+    width: 400px; /* O el ancho que prefieras */
+    height: 200px; /* Esto mantendrá la relación de aspecto de la bandera */
+    object-fit: cover; /* esto asegurará que la imagen cubra todo el espacio asignado sin deformarse */
+    vertical-align: middle; /* Alinea verticalmente la bandera con el texto */
+}
+/* Estilos para la fase de grupos */
+.estadios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.estadios th {
+    background-color: #888888;
+}
+.estadios th, .estadios td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+.footer {
+    text-align: center; /* Esto centra el texto dentro del contenedor */
+    color: #FFFFFF; /* Cambia #FFFFFF por el código de color que prefieras */
+    background-color: #0000a0; /* Esto es para el color de fondo, usa el que quieras */
+    padding-top: 10px; /* Espacio arriba */
+    padding-bottom: 10px; /* Espacio abajo */
+    font-size: 14px; /* Tamaño de la fuente, ajusta a tu preferencia */
+}

@@ -60,13 +60,19 @@ nav a {
 
 main {
     padding: 20px;
+
+    
 }
 
 h2 {
     padding: 0 10px; /* Ajusta este valor según sea necesario */
     margin-left: 1px; /* Ajusta este valor según sea necesario */
     margin-top: 40px; /* Espacio encima del h2 */
-    color: #1900ff; /* Color azul para los títulos de equipos participantes */
+    color: #2235e2; /* Color azul para los títulos de equipos participantes */
+    
+    margin-left: auto; /* Centra el título si el bloque es menor que el ancho de la página */
+    margin-right: auto;
+    width: max-content; /* Esto podría ayudar a manejar el ancho del elemento h2 */
 }
 
 .teams table {
@@ -110,3 +116,42 @@ table tr:nth-child(even) {
     background-color: #dddcdc; /* Color gris claro para filas pares, ajusta al tono de gris que prefieras */
 }
 
+
+
+
+/* Estilo base para las secciones */
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; /* Esto proporciona un poco de espacio en los bordes */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+/* Ajustes para pantallas más grandes */
+@media (min-width: 992px) {
+    section {
+        max-width: 970px; /* Establece un ancho máximo para evitar que las secciones se expandan demasiado */
+    }
+}
+/* Ajustes para pantallas medianas */
+@media (max-width: 991px) {
+    section {
+        max-width: 720px; /* Ajusta este valor según sea necesario */
+    }
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    section {
+        max-width: 100%; /* Las secciones ocupan el ancho completo en dispositivos móviles */
+        padding: 0 10px; /* Reducir el padding en dispositivos móviles */
+    }
+}
+
+
+.footer {
+    text-align: center; /* Esto centra el texto dentro del contenedor */
+    color: #FFFFFF; /* Cambia #FFFFFF por el código de color que prefieras */
+    background-color: #0000a0; /* Esto es para el color de fondo, usa el que quieras */
+    padding-top: 10px; /* Espacio arriba */
+    padding-bottom: 10px; /* Espacio abajo */
+    font-size: 14px; /* Tamaño de la fuente, ajusta a tu preferencia */
+}
