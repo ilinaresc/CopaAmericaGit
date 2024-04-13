@@ -8,36 +8,36 @@ body{
     background-color: rgb(255, 255, 255);
 }
 header{
-    background-color: rgb(43, 43, 43); /* El color de fondo del header */
-    color: rgb(255, 255, 255); /* Color de texto blanco */
-    padding: 15px; /* Añade algo de relleno */
-    display: flex; /* Esto establece un contenedor flex */
-    justify-content: space-between; /* Esto alinea los hijos al inicio y al final */
-    align-items: center; /* Esto centra los hijos verticalmente */
+    background-color: rgb(43, 43, 43); 
+    color: rgb(255, 255, 255); 
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     
     position: relative;
 }
 header::before {
-    content: ''; /* Los pseudo-elementos requieren la propiedad 'content' */
+    content: ''; 
     position: absolute;
-    top: 0; /* Posición al principio del header */
+    top: 0; 
     left: 0;
     right: 0;
-    height: 4px; /* Altura de la línea azul */
-    background-color: #0000a0; /* Cambia este color al que necesites */
+    height: 4px; 
+    background-color: #0000a0; 
 }
 nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Crea un contenedor flex para los elementos de la lista */
-    padding: 0; /* Restablece el padding */
-    margin: 0; /* Restablece el margen */
+    list-style: none; 
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
 }
 nav li {
-    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+    padding: 0 10px; 
 }
 nav a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: white; /* Establece el color del texto de los enlaces a blanco */
+    text-decoration: none; 
+    color: white; 
 }
 .logo{
     order: -1;
@@ -53,69 +53,69 @@ main {
 
 
 .fase-grupos h2 {
-    color: #2235e2; /* Sustituye este código de color por el que prefieras */
-    margin: 20px 0; /* Esto añade un espacio arriba y abajo del título del grupo */
-    font-weight: bold; /* Opcional, si quieres que los títulos sean más gruesos */
+    color: #2235e2; 
+    margin: 20px 0; 
+    font-weight: bold; 
 }
-/* Cambiar el color del texto de la sección Fase de grupos */
+
 .fase-grupos h3,
 .fase-grupos h4,
 .fase-grupos h5,
 .fase-grupos h6 {
-    color: #ff0000; /* Sustituye este código de color por el que prefieras */
-    font-size: 18px; /* Elige el tamaño de fuente que prefieras */
-    margin: 10px 0; /* Esto añade un espacio arriba y abajo del título del grupo */
-    font-weight: bold; /* Opcional, si quieres que los títulos sean más gruesos */
+    color: #ff0000; 
+    font-size: 18px; 
+    margin: 10px 0; 
+    font-weight: bold; 
 }
-/* Estilo base para las secciones */
+
 section {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px; /* Esto proporciona un poco de espacio en los bordes */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+    padding: 0 15px; 
+    box-sizing: border-box; 
 }
-/* Ajustes para pantallas más grandes */
+
 @media (min-width: 992px) {
     section {
-        max-width: 970px; /* Establece un ancho máximo para evitar que las secciones se expandan demasiado */
+        max-width: 970px; 
     }
 }
-/* Ajustes para pantallas medianas */
+
 @media (max-width: 991px) {
     section {
-        max-width: 720px; /* Ajusta este valor según sea necesario */
+        max-width: 720px; 
     }
 }
-/* Ajustes para pantallas pequeñas */
+
 @media (max-width: 767px) {
     section {
-        max-width: 100%; /* Las secciones ocupan el ancho completo en dispositivos móviles */
-        padding: 0 10px; /* Reducir el padding en dispositivos móviles */
+        max-width: 100%; 
+        padding: 0 10px; 
     }
 }
-/* Estilo para las celdas que contienen las banderas */
+
 .flag-cell img {
-    width: 30px; /* O el ancho que prefieras */
-    height: auto; /* Esto mantendrá la relación de aspecto de la bandera */
-    padding-right: 10px; /* Añade algo de espacio a la derecha de la bandera */
-    vertical-align: middle; /* Alinea verticalmente la bandera con el texto */
+    width: 30px; 
+    height: auto; 
+    padding-right: 10px; 
+    vertical-align: middle; 
 }
 .fase-grupos table {
-    margin-left: 0; /* Alinea la tabla a la izquierda */
+    margin-left: 0; 
     margin-right: 0;
     border-collapse: collapse;
     width: 100%;
-    margin: auto; /* Centra la tabla */
+    margin: auto; 
     margin-bottom: 10px; 
 }
-/* Si quieres que todas las imágenes en las celdas de la tabla tengan el mismo estilo */
+
 table td img {
-    width: 30px; /* O el ancho que prefieras */
-    height: auto; /* Esto mantendrá la relación de aspecto de la bandera */
-    padding-right: 10px; /* Añade algo de espacio a la derecha de la bandera */
-    vertical-align: middle; /* Alinea verticalmente la bandera con el texto */
+    width: 30px; 
+    height: auto; 
+    padding-right: 10px; 
+    vertical-align: middle; 
 }
-/* Estilos para la fase de grupos */
+
 .fase-grupos table {
     width: 100%;
     border-collapse: collapse;
@@ -126,56 +126,56 @@ table td img {
     padding: 8px;
     text-align: left;
 }
-/* Puedes especificar anchos diferentes para cada tipo de columna si es necesario */
-.fase-grupos th:nth-of-type(1), .fase-grupos td:nth-of-type(1) { width: 50%; } /* Por ejemplo para 'País' */
-.fase-grupos th:nth-of-type(2), .fase-grupos td:nth-of-type(2) { width: 4%; } /* Por ejemplo para 'PJ' */
-.fase-grupos th:nth-of-type(3), .fase-grupos td:nth-of-type(3) { width: 4%; } /* Por ejemplo para 'G' */
-.fase-grupos th:nth-of-type(4), .fase-grupos td:nth-of-type(4) { width: 4%; } /* Por ejemplo para 'E' */
-.fase-grupos th:nth-of-type(5), .fase-grupos td:nth-of-type(5) { width: 4%; } /* Por ejemplo para 'P' */
-.fase-grupos th:nth-of-type(6), .fase-grupos td:nth-of-type(6) { width: 4%; } /* Por ejemplo para 'GF' */
-.fase-grupos th:nth-of-type(7), .fase-grupos td:nth-of-type(7) { width: 4%; } /* Por ejemplo para 'GC' */
-.fase-grupos th:nth-of-type(8), .fase-grupos td:nth-of-type(8) { width: 4%; } /* Por ejemplo para 'DG' */
-.fase-grupos th:nth-of-type(9), .fase-grupos td:nth-of-type(9) { width: 4%; } /* Por ejemplo para 'Pts' */
-/* Y así sucesivamente para las demás columnas */
+
+.fase-grupos th:nth-of-type(1), .fase-grupos td:nth-of-type(1) { width: 50%; } 
+.fase-grupos th:nth-of-type(2), .fase-grupos td:nth-of-type(2) { width: 4%; } 
+.fase-grupos th:nth-of-type(3), .fase-grupos td:nth-of-type(3) { width: 4%; } 
+.fase-grupos th:nth-of-type(4), .fase-grupos td:nth-of-type(4) { width: 4%; } 
+.fase-grupos th:nth-of-type(5), .fase-grupos td:nth-of-type(5) { width: 4%; } 
+.fase-grupos th:nth-of-type(6), .fase-grupos td:nth-of-type(6) { width: 4%; } 
+.fase-grupos th:nth-of-type(7), .fase-grupos td:nth-of-type(7) { width: 4%; } 
+.fase-grupos th:nth-of-type(8), .fase-grupos td:nth-of-type(8) { width: 4%; } 
+.fase-grupos th:nth-of-type(9), .fase-grupos td:nth-of-type(9) { width: 4%; } 
+
 .fase-grupos th {
     background-color: #888888;
 }
-/* Estilos para centrar los números en las celdas de fase de grupos */
-.fase-grupos td:nth-of-type(2), /* PJ */
-.fase-grupos td:nth-of-type(3), /* G */
-.fase-grupos td:nth-of-type(4), /* E */
-.fase-grupos td:nth-of-type(5), /* P */
-.fase-grupos td:nth-of-type(6), /* GF */
-.fase-grupos td:nth-of-type(7), /* GC */
-.fase-grupos td:nth-of-type(8), /* DG */
-.fase-grupos td:nth-of-type(9) { /* Pts */
+
+.fase-grupos td:nth-of-type(2), 
+.fase-grupos td:nth-of-type(3), 
+.fase-grupos td:nth-of-type(4), 
+.fase-grupos td:nth-of-type(5), 
+.fase-grupos td:nth-of-type(6), 
+.fase-grupos td:nth-of-type(7), 
+.fase-grupos td:nth-of-type(8), 
+.fase-grupos td:nth-of-type(9) { 
     text-align: center;
 }
 
-/* Asegúrate de aplicar la clase .fase-grupos a las tablas de fase de grupos en tu HTML */
+
 
 
 
 
 .fase-eliminacion h2 {
-    color: #2235e2; /* Sustituye este código de color por el que prefieras */
-    margin: 20px 0; /* Esto añade un espacio arriba y abajo del título del grupo */
-    font-weight: bold; /* Opcional, si quieres que los títulos sean más gruesos */
+    color: #2235e2; 
+    margin: 20px 0; 
+    font-weight: bold; 
 }
-/* Cambiar el color del texto de la sección Fase de eliminación directa */
+
 .fase-eliminacion h3,
 .fase-eliminacion h4,
 .fase-eliminacion h5,
 .fase-eliminacion h6 {
-    color: #ff0000; /* Sustituye este código de color por el que prefieras */
-    font-size: 18px; /* Elige el tamaño de fuente que prefieras */
-    margin: 10px 0; /* Esto añade un espacio arriba y abajo del título del grupo */
-    font-weight: bold; /* Opcional, si quieres que los títulos sean más gruesos */
+    color: #ff0000; 
+    font-size: 18px; 
+    margin: 10px 0; 
+    font-weight: bold; 
 }
-/* Estilos para la fase de eliminación directa */
+
 .fase-eliminacion table {
-    width: auto; /* O el ancho que prefieras */
-    margin-left: 0; /* Alinea la tabla a la izquierda */
+    width: auto; 
+    margin-left: 0; 
     margin-right: 0;
     border-collapse: collapse;
 }
@@ -183,25 +183,25 @@ table td img {
 .fase-eliminacion th, .fase-eliminacion td {
     border: 1px solid #000000;
     padding: 8px;
-    text-align: left; /* O center si prefieres centrar el contenido */
+    text-align: left; 
 }
 
 .fase-eliminacion th {
     background-color: #888888;
 }
 
-/* Centrar contenido numérico si es necesario */
+
 .fase-eliminacion td:nth-of-type(n) {
-    text-align: center; /* Reemplaza n por el número de la columna si es necesario */
+    text-align: center; 
 }
 
 
 
 .footer {
-    text-align: center; /* Esto centra el texto dentro del contenedor */
-    color: #FFFFFF; /* Cambia #FFFFFF por el código de color que prefieras */
-    background-color: #0000a0; /* Esto es para el color de fondo, usa el que quieras */
-    padding-top: 10px; /* Espacio arriba */
-    padding-bottom: 10px; /* Espacio abajo */
-    font-size: 14px; /* Tamaño de la fuente, ajusta a tu preferencia */
+    text-align: center; 
+    color: #FFFFFF; 
+    background-color: #0000a0; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    font-size: 14px; 
 }
