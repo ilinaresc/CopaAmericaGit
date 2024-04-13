@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: rgb(43, 43, 43); /* El color de fondo del header */
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    padding: 15px; /* Añade algo de relleno */
+    display: flex; /* Esto establece un contenedor flex */
+    justify-content: space-between; /* Esto alinea los hijos al inicio y al final */
+    align-items: center; /* Esto centra los hijos verticalmente */
+    
+    position: relative;
+}
+
+
+header::before {
+    content: ''; /* Los pseudo-elementos requieren la propiedad 'content' */
+    position: absolute;
+    top: 0; /* Posición al principio del header */
+    left: 0;
+    right: 0;
+    height: 4px; /* Altura de la línea azul */
+    background-color: #0000a0; /* Cambia este color al que necesites */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Crea un contenedor flex para los elementos de la lista */
+    padding: 0; /* Restablece el padding */
+    margin: 0; /* Restablece el margen */
+}
+
+nav li {
+    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Establece el color del texto de los enlaces a blanco */
+}
+
+.logo{
+    order: -1;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+
+main {
+    min-height: calc(100vh - 150px); /* Ajusta 150px al tamaño de tu header y footer */
+    /* Otros estilos */
+    padding: 20px;
+}
+
+
+h2 {
+    padding: 0 10px; /* Ajusta este valor según sea necesario */
+    margin-left: 1px; /* Ajusta este valor según sea necesario */
+    margin-top: 20px; /* Espacio encima del h2 */
+    color: #2235e2; /* Color azul para los títulos de equipos participantes */
+    padding-bottom: 40px; /* Espacio abajo */
+    margin-left: auto; /* Centra el título si el bloque es menor que el ancho de la página */
+    margin-right: auto;
+    width: max-content; /* Esto podría ayudar a manejar el ancho del elemento h2 */
+}
+h3 {
+    color: #ff0000; /* Sustituye este código de color por el que prefieras */
+    font-size: 18px; /* Elige el tamaño de fuente que prefieras */
+    margin: 10px 0; /* Esto añade un espacio arriba y abajo del título del grupo */
+    font-weight: bold; /* Opcional, si quieres que los títulos sean más gruesos */
+}
+
+/* Estilo base para las secciones */
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; /* Esto proporciona un poco de espacio en los bordes */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+/* Ajustes para pantallas más grandes */
+@media (min-width: 992px) {
+    section {
+        max-width: 970px; /* Establece un ancho máximo para evitar que las secciones se expandan demasiado */
+    }
+}
+/* Ajustes para pantallas medianas */
+@media (max-width: 991px) {
+    section {
+        max-width: 720px; /* Ajusta este valor según sea necesario */
+    }
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    section {
+        max-width: 100%; /* Las secciones ocupan el ancho completo en dispositivos móviles */
+        padding: 0 10px; /* Reducir el padding en dispositivos móviles */
+    }
+    .news {
+        column-count: 1; /* Solo una columna para dispositivos móviles */
+    }
+}
+
+
+.news {
+    /* Estilos para la sección de noticias */
+    column-count: 2; /* Dividirá el contenido en 2 columnas */
+    column-gap: 40px; /* Añade un espacio de 40px entre columnas */
+    padding: 20px; /* Añade un poco de padding alrededor del contenido */
+}
+
+/* Elimina el margen superior del primer artículo de noticias de cada columna */
+.news-item:first-child {
+    margin-top: 0;
+}
+
+.news-item {
+    /* Estilos para cada artículo de noticia */
+    break-inside: avoid;
+    margin-top: 20px; /* o el valor que prefieras */
+    margin-bottom: 20px; /* Espacio entre noticias */
+}
+
+.news-date {
+    /* Estilos para la fecha de publicación */
+    font-style: italic;
+    color: #666;
+}
+
+.news img {
+    /* Estilos para la imagen de la noticia */
+    max-width: 90%; /* Asegúrate de que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.news-summary {
+    /* Estilos para el resumen de la noticia */
+    margin: 10px 0;
+}
+
+.news-link {
+    /* Estilos para el enlace a la noticia completa */
+    color: #1a0dab; /* Un color estándar para enlaces */
+    text-decoration: underline; /* Subrayado para indicar que es un enlace */
+}
+.news-item img {
+    width: 100%; /* o un ancho fijo si prefieres */
+    height: 250px; /* ajusta a la altura que desees */
+    object-fit: cover; /* esto asegura que la imagen cubra el área sin distorsionarse */
+    display: block; /* elimina cualquier espacio extra debajo de la imagen */
+    margin-bottom: 10px; /* espacio debajo de la imagen antes del texto */
+  }
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Esto asegura que el html y body ocupen toda la altura */
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    /* Otros estilos */
+    background-color: #0000a0; /* O el color que prefieras */
+    color: white; /* Para el texto */
+    padding-bottom: 40px; /* Espacio abajo */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0000a0; /* Color de fondo de tu elección */
+    color: white; /* Color del texto */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
