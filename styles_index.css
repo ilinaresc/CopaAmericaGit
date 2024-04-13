@@ -10,41 +10,41 @@ body{
 }
 
 header{
-    background-color: rgb(43, 43, 43); /* El color de fondo del header */
-    color: rgb(255, 255, 255); /* Color de texto blanco */
-    padding: 15px; /* Añade algo de relleno */
-    display: flex; /* Esto establece un contenedor flex */
-    justify-content: space-between; /* Esto alinea los hijos al inicio y al final */
-    align-items: center; /* Esto centra los hijos verticalmente */
+    background-color: rgb(43, 43, 43); 
+    color: rgb(255, 255, 255); 
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     
     position: relative;
 }
 
 
 header::before {
-    content: ''; /* Los pseudo-elementos requieren la propiedad 'content' */
+    content: ''; 
     position: absolute;
-    top: 0; /* Posición al principio del header */
+    top: 0; 
     left: 0;
     right: 0;
-    height: 4px; /* Altura de la línea azul */
-    background-color: #0000a0; /* Cambia este color al que necesites */
+    height: 4px; 
+    background-color: #0000a0; 
 }
 
 nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Crea un contenedor flex para los elementos de la lista */
-    padding: 0; /* Restablece el padding */
-    margin: 0; /* Restablece el margen */
+    list-style: none; 
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
 }
 
 nav li {
-    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+    padding: 0 10px; 
 }
 
 nav a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: white; /* Establece el color del texto de los enlaces a blanco */
+    text-decoration: none; 
+    color: white; 
 }
 
 .logo{
@@ -65,14 +65,14 @@ main {
 }
 
 h2 {
-    padding: 0 10px; /* Ajusta este valor según sea necesario */
-    margin-left: 1px; /* Ajusta este valor según sea necesario */
-    margin-top: 40px; /* Espacio encima del h2 */
-    color: #2235e2; /* Color azul para los títulos de equipos participantes */
+    padding: 0 10px; 
+    margin-left: 1px; 
+    margin-top: 40px; 
+    color: #2235e2; 
     
-    margin-left: auto; /* Centra el título si el bloque es menor que el ancho de la página */
+    margin-left: auto; 
     margin-right: auto;
-    width: max-content; /* Esto podría ayudar a manejar el ancho del elemento h2 */
+    width: max-content; 
 }
 
 .teams table {
@@ -92,66 +92,66 @@ h2 {
 }
 
 .teams td img {
-    width: 50px; /* Ajustar según el tamaño de la bandera */
+    width: 50px; 
     height: auto;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    border-collapse: collapse; 
 }
 
 table th {
-    background-color: #000000; /* Color de fondo para los encabezados */
-    color: #ffffff; /* Color del texto para los encabezados */
+    background-color: #000000; 
+    color: #ffffff; 
 }
 
-/* Colorea cada fila impar de blanco */
+
 table tr:nth-child(odd) {
-    background-color: #ffffff; /* Color blanco para filas impares */
+    background-color: #ffffff; 
 }
 
-/* Colorea cada fila par de gris */
+
 table tr:nth-child(even) {
-    background-color: #dddcdc; /* Color gris claro para filas pares, ajusta al tono de gris que prefieras */
+    background-color: #dddcdc; 
 }
 
 
 
 
-/* Estilo base para las secciones */
+
 section {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px; /* Esto proporciona un poco de espacio en los bordes */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+    padding: 0 15px; 
+    box-sizing: border-box; 
 }
-/* Ajustes para pantallas más grandes */
+
 @media (min-width: 992px) {
     section {
-        max-width: 970px; /* Establece un ancho máximo para evitar que las secciones se expandan demasiado */
+        max-width: 970px; 
     }
 }
-/* Ajustes para pantallas medianas */
+
 @media (max-width: 991px) {
     section {
-        max-width: 720px; /* Ajusta este valor según sea necesario */
+        max-width: 720px; 
     }
 }
-/* Ajustes para pantallas pequeñas */
+
 @media (max-width: 767px) {
     section {
-        max-width: 100%; /* Las secciones ocupan el ancho completo en dispositivos móviles */
-        padding: 0 10px; /* Reducir el padding en dispositivos móviles */
+        max-width: 100%; 
+        padding: 0 10px; 
     }
 }
 
 
 .footer {
-    text-align: center; /* Esto centra el texto dentro del contenedor */
-    color: #FFFFFF; /* Cambia #FFFFFF por el código de color que prefieras */
-    background-color: #0000a0; /* Esto es para el color de fondo, usa el que quieras */
-    padding-top: 10px; /* Espacio arriba */
-    padding-bottom: 10px; /* Espacio abajo */
-    font-size: 14px; /* Tamaño de la fuente, ajusta a tu preferencia */
+    text-align: center; 
+    color: #FFFFFF; 
+    background-color: #0000a0; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    font-size: 14px; 
 }
